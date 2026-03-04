@@ -70,7 +70,7 @@ export const galleryItems = Array.from({ length: 22 }, (_, i) => {
 
   return {
     id,
-    src: `/images/gallery/${file}.svg`,
+    src: `/images/gallery/${file}.jpg?v=2`,
     alt: `Портрет на плёнку 6×9, кадр ${id}`,
     caption: "6×9 film portrait"
   };
