@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useEffect } from "react";
 import { galleryItems } from "@/config/site";
 import { Modal } from "@/components/Modal";
@@ -38,7 +37,7 @@ export function Lightbox({ openIndex, onClose, onMove }: LightboxProps) {
     <Modal open={isOpen} onClose={onClose} title={item.caption}>
       <div className="space-y-4">
         <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-line bg-[#ede8dd]">
-          <Image src={item.src} alt={item.alt} fill sizes="(max-width: 768px) 90vw, 60vw" className="object-cover" />
+          <img src={item.src} alt={item.alt} className="h-full w-full object-contain" />
         </div>
         <div className="flex items-center justify-between gap-3">
           <button

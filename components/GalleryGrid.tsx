@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { galleryItems } from "@/config/site";
 import { Lightbox } from "@/components/Lightbox";
@@ -20,13 +19,12 @@ export function GalleryGrid() {
               className="group relative aspect-[4/5] overflow-hidden rounded-sm border border-line bg-[#ece7db] text-left"
               aria-label={`Открыть портрет ${item.id}`}
             >
-              <Image
+              <img
                 src={item.src}
                 alt={item.alt}
-                fill
                 loading="lazy"
-                sizes="(max-width: 768px) 48vw, (max-width: 1200px) 30vw, 22vw"
-                className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                decoding="async"
+                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
               />
             </button>
           ))}

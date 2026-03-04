@@ -1,6 +1,5 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
 import { BookingModal } from "@/components/BookingModal";
 import { Button } from "@/components/Button";
@@ -30,14 +29,13 @@ export function Hero() {
       </div>
 
       <div className="order-1 md:order-2">
-        <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-line bg-[#ede8dd] shadow-card">
-          <Image
+        <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-line bg-[#e7dfd0] shadow-card">
+          <img
             src="/images/hero-placeholder.jpg"
             alt="Портрет в историческом пространстве Санкт-Петербурга"
-            fill
-            priority
-            sizes="(max-width: 768px) 100vw, 42vw"
-            className="object-cover"
+            className="h-full w-full object-contain"
+            loading="eager"
+            fetchPriority="high"
           />
         </div>
       </div>
