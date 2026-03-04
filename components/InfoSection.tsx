@@ -12,6 +12,12 @@ export function InfoSection() {
             </li>
           ))}
         </ul>
+        <ul className="mt-3 grid gap-3 text-[15px] leading-relaxed text-muted md:grid-cols-2">
+          <li className="rounded-sm border border-line px-4 py-3">2 авторские контактные печати 10×15</li>
+          <li className="rounded-sm border border-line px-4 py-3">1 портрет в рамке</li>
+          <li className="rounded-sm border border-line px-4 py-3">1 печать в архивном конверте</li>
+          <li className="rounded-sm border border-line px-4 py-3">Цифровые сканы для личного использования</li>
+        </ul>
         <p className="mt-3 text-sm text-muted">Фотографии на сайте — примеры прошлых сессий.</p>
       </div>
     </section>

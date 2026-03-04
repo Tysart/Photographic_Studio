@@ -23,7 +23,7 @@ export function PriceCard() {
         </ul>
 
         <p className="mt-4 text-sm text-muted">Обычно из серии получается 3–5 самых сильных портретов.</p>
-        <p className="mt-1 text-sm text-muted">Ручная печать (контакт 6×9) — по запросу / скоро.</p>
+        <p className="mt-1 text-sm text-muted">Контактные печати входят в стоимость сессии.</p>
       </div>
     </section>
   );
