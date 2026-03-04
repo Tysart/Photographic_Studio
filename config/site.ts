@@ -64,7 +64,7 @@ export const faqItems = [
   }
 ] as const;
 
-export const galleryItems = Array.from({ length: 24 }, (_, i) => {
+export const galleryItems = Array.from({ length: 22 }, (_, i) => {
   const id = i + 1;
   const file = String(id).padStart(2, "0");
 
