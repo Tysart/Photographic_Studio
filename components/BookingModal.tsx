@@ -29,10 +29,10 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
           WhatsApp
         </a>
         <a href={siteConfig.contacts.phone} className="block rounded-sm border border-line px-4 py-3 text-sm hover:border-accent">
-          Позвонить
+          Call
         </a>
       </div>
-      <p className="mt-5 text-sm text-muted">По записи. Обычно отвечаю в течение дня.</p>
+      <p className="mt-5 text-sm text-muted">По записи. Обычно отвечаю в течение дня. (By appointment only. Reply time: usually within a day.)</p>
     </Modal>
   );
 }

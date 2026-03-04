@@ -24,6 +24,7 @@ export function GalleryGrid() {
                 src={item.src}
                 alt={item.alt}
                 fill
+                loading="lazy"
                 sizes="(max-width: 768px) 48vw, (max-width: 1200px) 30vw, 22vw"
                 className="object-cover transition-transform duration-300 group-hover:scale-[1.02]"
               />

@@ -1,9 +1,10 @@
 import { AboutAtelier } from "@/components/AboutAtelier";
+import { FAQAccordion } from "@/components/FAQAccordion";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
-import { HomeActions } from "@/components/HomeActions";
+import { HowItWorks } from "@/components/HowItWorks";
 import { InfoSection } from "@/components/InfoSection";
-import { LearnMoreModals } from "@/components/LearnMoreModals";
+import { LocationsSection } from "@/components/LocationsSection";
 import { PriceCard } from "@/components/PriceCard";
 import { SeoFooter } from "@/components/SeoFooter";
 
@@ -13,10 +14,11 @@ export default function HomePage() {
       <Header />
       <main>
         <Hero />
-        <HomeActions />
         <InfoSection />
+        <HowItWorks />
         <PriceCard />
-        <LearnMoreModals />
+        <LocationsSection />
+        <FAQAccordion />
         <AboutAtelier />
       </main>
       <SeoFooter />

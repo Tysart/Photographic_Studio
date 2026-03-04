@@ -1,20 +1,7 @@
 import type { Metadata } from "next";
-import { Cormorant_Garamond, Inter } from "next/font/google";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
-
-const serif = Cormorant_Garamond({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600", "700"],
-  variable: "--font-serif"
-});
-
-const ui = Inter({
-  subsets: ["latin", "cyrillic"],
-  weight: ["400", "500", "600"],
-  variable: "--font-ui"
-});
 
 export const metadata: Metadata = {
   title: siteConfig.title,
@@ -31,7 +18,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
     <html lang="ru">
-      <body className={`${serif.variable} ${ui.variable}`}>
+      <body>
         <div className="site-shell">{children}</div>
       </body>
     </html>
