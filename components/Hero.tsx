@@ -16,6 +16,7 @@ export function Hero() {
         <p className="mb-4 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted">
           <span className="ornament" aria-hidden="true" />
           Фотоателье TESSART
+          <img src="/brand/tessart-seal.svg" alt="" className="ml-1 h-6 w-6 opacity-55" aria-hidden="true" />
         </p>
         <h1 className="max-w-xl text-4xl leading-tight text-ink md:text-5xl">
           {locale === "ru" ? siteConfig.heroTitle : "Black-and-white 6×9 film portrait in Saint Petersburg."}

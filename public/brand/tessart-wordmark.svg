@@ -1,20 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="260" viewBox="0 0 1120 260" role="img" aria-labelledby="title desc">
   <title id="title">TESSART Wordmark</title>
-  <desc id="desc">French atelier style wordmark for TESSART</desc>
-  <rect width="1200" height="320" fill="none"/>
+  <desc id="desc">Primary interface logo for TESSART</desc>
+  <rect width="1120" height="260" fill="none"/>
 
-  <g stroke="#8b7358" stroke-width="2" fill="none" opacity="0.82">
-    <line x1="180" y1="72" x2="460" y2="72"/>
-    <line x1="740" y1="72" x2="1020" y2="72"/>
-    <line x1="180" y1="262" x2="460" y2="262"/>
-    <line x1="740" y1="262" x2="1020" y2="262"/>
-  </g>
-
-  <g fill="#8b7358" opacity="0.9">
-    <circle cx="600" cy="72" r="4.2"/>
-    <circle cx="600" cy="262" r="4.2"/>
-  </g>
-
-  <text x="600" y="166" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="98" letter-spacing="12" fill="#1f1d1a">TESSART</text>
-  <text x="600" y="222" text-anchor="middle" font-family="'Times New Roman', serif" font-size="20" letter-spacing="3.2" fill="#5f584e">ATELIER DE PORTRAIT · SAINT-PÉTERSBOURG</text>
+  <text x="560" y="122" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="118" letter-spacing="11" fill="#1f1d1a">TESSART</text>
+  <line x1="340" y1="154" x2="780" y2="154" stroke="#8b7358" stroke-width="2" opacity="0.8"/>
+  <text x="560" y="193" text-anchor="middle" font-family="'Times New Roman', serif" font-size="22" letter-spacing="3.2" fill="#5f584e">PORTRAIT ATELIER · SAINT PETERSBURG</text>
 </svg>

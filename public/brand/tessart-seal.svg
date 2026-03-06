@@ -1,18 +1,25 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="720" viewBox="0 0 720 720" role="img" aria-labelledby="title desc">
   <title id="title">TESSART Seal</title>
-  <desc id="desc">Round atelier seal for packaging</desc>
-  <circle cx="350" cy="350" r="312" fill="none" stroke="#8b7358" stroke-width="4"/>
-  <circle cx="350" cy="350" r="280" fill="none" stroke="#d5ccbc" stroke-width="2"/>
-  <text x="350" y="212" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="76" letter-spacing="8" fill="#1f1d1a">TESSART</text>
-  <text x="350" y="264" text-anchor="middle" font-family="'Times New Roman', serif" font-size="22" letter-spacing="3" fill="#5f584e">ATELIER DE PORTRAIT</text>
-  <text x="350" y="292" text-anchor="middle" font-family="'Times New Roman', serif" font-size="18" letter-spacing="2" fill="#5f584e">SAINT-PÉTERSBOURG</text>
+  <desc id="desc">Decorative atelier seal for packaging and print</desc>
+
+  <rect width="720" height="720" fill="none"/>
+  <circle cx="360" cy="360" r="312" fill="none" stroke="#8b7358" stroke-width="4"/>
+  <circle cx="360" cy="360" r="282" fill="none" stroke="#d5ccbc" stroke-width="2"/>
+
+  <path d="M160 250c70-54 330-54 400 0" fill="none" stroke="#8b7358" stroke-width="2.2"/>
+  <path d="M160 470c70 54 330 54 400 0" fill="none" stroke="#8b7358" stroke-width="2.2"/>
+
+  <text x="360" y="230" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="72" letter-spacing="8" fill="#1f1d1a">TESSART</text>
+  <text x="360" y="274" text-anchor="middle" font-family="'Times New Roman', serif" font-size="20" letter-spacing="3" fill="#5f584e">ATELIER DE PORTRAIT</text>
 
   <g fill="#1f1d1a">
-    <text x="350" y="456" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="220" letter-spacing="6">TS</text>
+    <text x="360" y="465" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="208" letter-spacing="6">TS</text>
   </g>
 
-  <g fill="#8b7358">
-    <circle cx="350" cy="104" r="7"/>
-    <circle cx="350" cy="596" r="7"/>
+  <g fill="#8b7358" opacity="0.92">
+    <circle cx="360" cy="95" r="6"/>
+    <circle cx="360" cy="625" r="6"/>
+    <circle cx="95" cy="360" r="6"/>
+    <circle cx="625" cy="360" r="6"/>
   </g>
 </svg>
