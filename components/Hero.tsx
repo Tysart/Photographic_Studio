@@ -4,9 +4,11 @@ import { useState } from "react";
 import { BookingModal } from "@/components/BookingModal";
 import { Button } from "@/components/Button";
 import { siteConfig } from "@/config/site";
+import { useLocale } from "@/components/LocaleProvider";
 
 export function Hero() {
   const [openBooking, setOpenBooking] = useState(false);
+  const { locale } = useLocale();
 
   return (
     <section className="mx-auto grid w-full max-w-6xl gap-8 px-6 pb-12 pt-8 md:grid-cols-[1.05fr_1fr] md:px-10 md:pt-12">
@@ -15,17 +17,25 @@ export function Hero() {
           <span className="ornament" aria-hidden="true" />
           Фотоателье TESSART
         </p>
-        <h1 className="max-w-xl text-4xl leading-tight text-ink md:text-5xl">{siteConfig.heroTitle}</h1>
-        <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">{siteConfig.heroLead}</p>
-        <p className="mt-2 text-sm text-muted">({siteConfig.heroLeadEn})</p>
+        <h1 className="max-w-xl text-4xl leading-tight text-ink md:text-5xl">
+          {locale === "ru" ? siteConfig.heroTitle : "Black-and-white 6×9 film portrait in Saint Petersburg."}
+        </h1>
+        <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
+          {locale === "ru" ? siteConfig.heroLead : "A quiet walk and a portrait you can truly hold."}
+        </p>
+        <p className="mt-2 text-sm text-muted">
+          {locale === "ru" ? `(${siteConfig.heroLeadEn})` : "(Тихая прогулка и фотография, которую приятно держать в руках.)"}
+        </p>
 
         <div className="mt-7 flex flex-wrap gap-3">
-          <Button onClick={() => setOpenBooking(true)}>Записаться</Button>
+          <Button onClick={() => setOpenBooking(true)}>{locale === "ru" ? "Записаться" : "Book a session"}</Button>
           <Button href="/gallery" variant="ghost">
-            Смотреть портреты
+            {locale === "ru" ? "Смотреть портреты" : "View portraits"}
           </Button>
         </div>
-        <p className="mt-3 text-sm text-muted">Отвечаю в течение дня.</p>
+        <p className="mt-3 text-sm text-muted">
+          {locale === "ru" ? "Отвечаю в течение дня." : "I usually reply within the day."}
+        </p>
       </div>
 
       <div className="order-1 md:order-2">

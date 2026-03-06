@@ -3,6 +3,7 @@
 import { useEffect } from "react";
 import { galleryItems } from "@/config/site";
 import { Modal } from "@/components/Modal";
+import { useLocale } from "@/components/LocaleProvider";
 
 type LightboxProps = {
   openIndex: number | null;
@@ -12,6 +13,7 @@ type LightboxProps = {
 
 export function Lightbox({ openIndex, onClose, onMove }: LightboxProps) {
   const isOpen = openIndex !== null;
+  const { locale } = useLocale();
 
   useEffect(() => {
     if (!isOpen || openIndex === null) return;
@@ -45,7 +47,7 @@ export function Lightbox({ openIndex, onClose, onMove }: LightboxProps) {
             onClick={() => onMove((openIndex - 1 + galleryItems.length) % galleryItems.length)}
             className="rounded-sm border border-line px-3 py-2 text-sm text-muted hover:text-ink"
           >
-            ← Prev
+            {locale === "ru" ? "← Назад" : "← Prev"}
           </button>
           <p className="text-xs uppercase tracking-[0.14em] text-muted">
             {openIndex + 1} / {galleryItems.length}
@@ -55,7 +57,7 @@ export function Lightbox({ openIndex, onClose, onMove }: LightboxProps) {
             onClick={() => onMove((openIndex + 1) % galleryItems.length)}
             className="rounded-sm border border-line px-3 py-2 text-sm text-muted hover:text-ink"
           >
-            Next →
+            {locale === "ru" ? "Далее →" : "Next →"}
           </button>
         </div>
       </div>

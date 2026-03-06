@@ -46,42 +46,66 @@ export const howItWorks = [
     en: "A calm portrait walk."
   },
   {
-    ru: "Через 2–3 дня забираете свой сувенир: сканы и авторские печати.",
-    en: "In 2–3 days you receive your souvenir: scans and author prints."
+    ru: "Получаете предварительный скан, выбираете 2 кадра — и в течение 3 дней забираете готовый комплект.",
+    en: "You get preview scans, choose 2 frames, and receive the final set within 3 days."
   }
 ] as const;
 
 export const locations = [
-  "Витебский вокзал",
-  "Парадные и лестницы (по договорённости)",
-  "Улицы и дворы центра",
-  "Набережные в спокойное время"
+  {
+    ru: "Витебский вокзал",
+    en: "Vitebsky Railway Station"
+  },
+  {
+    ru: "Парадные и лестницы (по договорённости)",
+    en: "Historic entrances and staircases (by arrangement)"
+  },
+  {
+    ru: "Улицы и дворы центра",
+    en: "Streets and courtyards of the city center"
+  },
+  {
+    ru: "Набережные в спокойное время",
+    en: "Riverside spots at calmer hours"
+  }
 ] as const;
 
 export const faqItems = [
   {
-    q: "Что надеть?",
-    a: "Лучше простую одежду без крупных логотипов и активных узоров. Хорошо работают однотонные вещи и фактуры."
+    qRu: "Что надеть?",
+    qEn: "What should I wear?",
+    aRu: "Лучше простую одежду без крупных логотипов и активных узоров. Хорошо работают однотонные вещи и фактуры.",
+    aEn: "Simple clothing works best: no large logos, no busy patterns. Solid colors and textures look great on film."
   },
   {
-    q: "Если дождь?",
-    a: "Выберем крытую локацию или перенесем встречу на удобное время."
+    qRu: "Если дождь?",
+    qEn: "What if it rains?",
+    aRu: "Выберем крытую локацию или перенесем встречу на удобное время.",
+    aEn: "We can move to a covered location or reschedule to a better time."
   },
   {
-    q: "Можно вдвоём?",
-    a: "Да, можно провести съёмку для пары в том же формате встречи."
+    qRu: "Можно вдвоём?",
+    qEn: "Can we do a couple session?",
+    aRu: "Да, можно провести съёмку для пары в том же формате встречи.",
+    aEn: "Yes, a couple session is possible in the same format."
   },
   {
-    q: "Сколько кадров?",
-    a: "До 8 кадров за сессию. Обычно снимаем в нескольких точках по пути."
+    qRu: "Сколько кадров?",
+    qEn: "How many frames?",
+    aRu: "До 8 кадров за сессию. Обычно снимаем в нескольких точках по пути.",
+    aEn: "Up to 8 frames per session, usually across a few nearby spots."
   },
   {
-    q: "Когда будет готово?",
-    a: "Сканы обычно готовы через 2–3 дня после встречи."
+    qRu: "Когда будет готово?",
+    qEn: "When will it be ready?",
+    aRu: "Сканы обычно готовы через 2–3 дня после встречи.",
+    aEn: "Scans are usually ready in 2–3 days."
   },
   {
-    q: "Как записаться?",
-    a: "Через Telegram, WhatsApp или звонок. Обычно отвечаю в течение дня."
+    qRu: "Как записаться?",
+    qEn: "How to book?",
+    aRu: "Через Telegram, WhatsApp или звонок. Обычно отвечаю в течение дня.",
+    aEn: "Via Telegram, WhatsApp or a phone call. I usually reply within a day."
   }
 ] as const;
 

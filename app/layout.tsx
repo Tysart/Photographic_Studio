@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
+import { LocaleProvider } from "@/components/LocaleProvider";
 
 export const metadata: Metadata = {
   title: siteConfig.title,
@@ -19,7 +20,9 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
   return (
     <html lang="ru">
       <body>
-        <div className="site-shell">{children}</div>
+        <LocaleProvider>
+          <div className="site-shell">{children}</div>
+        </LocaleProvider>
       </body>
     </html>
   );
