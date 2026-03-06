@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="700" height="700" viewBox="0 0 700 700" role="img" aria-labelledby="title desc">
+  <title id="title">TESSART Seal</title>
+  <desc id="desc">Round atelier seal for packaging</desc>
+  <circle cx="350" cy="350" r="312" fill="none" stroke="#8b7358" stroke-width="4"/>
+  <circle cx="350" cy="350" r="280" fill="none" stroke="#d5ccbc" stroke-width="2"/>
+  <text x="350" y="212" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="76" letter-spacing="8" fill="#1f1d1a">TESSART</text>
+  <text x="350" y="264" text-anchor="middle" font-family="'Times New Roman', serif" font-size="22" letter-spacing="3" fill="#5f584e">ATELIER DE PORTRAIT</text>
+  <text x="350" y="292" text-anchor="middle" font-family="'Times New Roman', serif" font-size="18" letter-spacing="2" fill="#5f584e">SAINT-PÉTERSBOURG</text>
+
+  <g fill="#1f1d1a">
+    <text x="350" y="456" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="220" letter-spacing="6">TS</text>
+  </g>
+
+  <g fill="#8b7358">
+    <circle cx="350" cy="104" r="7"/>
+    <circle cx="350" cy="596" r="7"/>
+  </g>
+</svg>

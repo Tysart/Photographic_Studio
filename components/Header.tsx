@@ -15,8 +15,8 @@ export function Header() {
       <header className="sticky top-0 z-30 border-b border-transparent bg-[#faf7f0]/95 backdrop-blur">
         <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-4 md:px-10">
           <div>
-            <Link href="/" className="text-2xl tracking-[0.12em] text-ink no-underline">
-              {siteConfig.brand}
+            <Link href="/" className="inline-block no-underline">
+              <img src="/brand/tessart-wordmark.svg" alt={siteConfig.brand} className="h-9 w-auto md:h-10" />
             </Link>
             <p className="mt-1 text-xs uppercase tracking-[0.16em] text-muted">{siteConfig.subtitle}</p>
           </div>
