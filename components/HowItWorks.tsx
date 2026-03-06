@@ -7,9 +7,10 @@ export function HowItWorks() {
         <h2 className="text-2xl text-ink">Как проходит</h2>
         <ol className="mt-5 grid gap-3 md:grid-cols-3">
           {howItWorks.map((step, index) => (
-            <li key={step} className="rounded-sm border border-line px-4 py-4 text-[15px] leading-relaxed text-muted">
+            <li key={step.ru} className="rounded-sm border border-line px-4 py-4 text-[15px] leading-relaxed text-muted">
               <p className="mb-2 text-xs uppercase tracking-[0.16em] text-accent">Шаг {index + 1}</p>
-              {step}
+              <p>{step.ru}</p>
+              <p className="mt-1 text-xs text-muted/80">({step.en})</p>
             </li>
           ))}
         </ol>

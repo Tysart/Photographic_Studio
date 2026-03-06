@@ -18,16 +18,37 @@ export const siteConfig = {
 } as const;
 
 export const productFacts = [
-  "Ч/б плёнка, средний формат 6×9",
-  "До 8 кадров за встречу (1 катушка)",
-  "Съёмка 60–90 минут (до 2 часов)",
-  "Все сканы через 2–3 дня"
+  {
+    ru: "Ч/б плёнка, средний формат 6×9",
+    en: "B&W medium format 6×9"
+  },
+  {
+    ru: "До 8 кадров за встречу (1 катушка)",
+    en: "Up to 8 frames per session"
+  },
+  {
+    ru: "Съёмка 60–90 минут (до 2 часов)",
+    en: "60–90 minutes, up to 2 hours"
+  },
+  {
+    ru: "Все сканы через 2–3 дня",
+    en: "All scans in 2–3 days"
+  }
 ] as const;
 
 export const howItWorks = [
-  "Встречаемся в центре в выбранной точке.",
-  "60–90 минут прогулки и портретов.",
-  "Проявка и сканирование — и через 2–3 дня вы получаете все кадры."
+  {
+    ru: "Встречаемся в центре в выбранной точке.",
+    en: "Meet in the city center."
+  },
+  {
+    ru: "60–90 минут прогулки и портретов.",
+    en: "A calm portrait walk."
+  },
+  {
+    ru: "Через 2–3 дня забираете свой сувенир: сканы и авторские печати.",
+    en: "In 2–3 days you receive your souvenir: scans and author prints."
+  }
 ] as const;
 
 export const locations = [
