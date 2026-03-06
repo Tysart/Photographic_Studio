@@ -13,14 +13,14 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-30 border-b border-transparent bg-[#faf7f0]/95 backdrop-blur">
-        <div className="mx-auto flex w-full max-w-6xl items-start justify-between px-6 py-4 md:items-center md:px-10">
-          <div>
+        <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-6 py-4 md:flex-row md:items-center md:justify-between md:px-10">
+          <div className="self-center md:self-auto">
             <Link href="/" className="inline-block no-underline">
-              <img src="/brand/tessart-wordmark.svg" alt={siteConfig.brand} className="h-14 w-auto md:h-[86px]" />
+              <img src="/brand/tessart-wordmark.svg" alt={siteConfig.brand} className="h-20 w-auto md:h-24" />
             </Link>
             <p className="mt-1 hidden text-xs uppercase tracking-[0.16em] text-muted md:block">{siteConfig.subtitle}</p>
           </div>
-          <div className="flex items-center gap-3 md:gap-4">
+          <div className="flex w-full items-center justify-between gap-3 md:w-auto md:justify-end md:gap-4">
             <div className="inline-flex overflow-hidden rounded-sm border border-line text-xs">
               <button
                 type="button"
