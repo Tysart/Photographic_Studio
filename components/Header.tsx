@@ -18,7 +18,6 @@ export function Header() {
             <Link href="/" className="inline-block no-underline">
               <img src="/brand/tessart-wordmark.svg" alt={siteConfig.brand} className="h-20 w-auto md:h-24" />
             </Link>
-            <p className="mt-1 hidden text-xs uppercase tracking-[0.16em] text-muted md:block">{siteConfig.subtitle}</p>
           </div>
           <div className="flex w-full items-center justify-between gap-3 md:w-auto md:justify-end md:gap-4">
             <div className="inline-flex overflow-hidden rounded-sm border border-line text-xs">
