@@ -109,7 +109,7 @@ export const faqItems = [
 ] as const;
 
 export const galleryItems = Array.from({ length: 22 }, (_, i) => {
-  const id = i + 1;
+  const id = 22 - i;
   const file = String(id).padStart(2, "0");
 
   return {
