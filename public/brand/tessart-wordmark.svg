@@ -1,23 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="980" height="220" viewBox="0 0 980 220" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">TESSART Wordmark</title>
   <desc id="desc">French atelier style wordmark for TESSART</desc>
-  <rect width="980" height="220" fill="none"/>
+  <rect width="1200" height="320" fill="none"/>
 
-  <g fill="#1f1d1a">
-    <text x="490" y="102" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="92" letter-spacing="10">TESSART</text>
-  </g>
-
-  <g stroke="#8b7358" stroke-width="1.8" fill="none" opacity="0.85">
-    <line x1="120" y1="38" x2="360" y2="38"/>
-    <line x1="620" y1="38" x2="860" y2="38"/>
-    <line x1="120" y1="176" x2="360" y2="176"/>
-    <line x1="620" y1="176" x2="860" y2="176"/>
+  <g stroke="#8b7358" stroke-width="2" fill="none" opacity="0.82">
+    <line x1="180" y1="72" x2="460" y2="72"/>
+    <line x1="740" y1="72" x2="1020" y2="72"/>
+    <line x1="180" y1="262" x2="460" y2="262"/>
+    <line x1="740" y1="262" x2="1020" y2="262"/>
   </g>
 
   <g fill="#8b7358" opacity="0.9">
-    <circle cx="490" cy="38" r="3.8"/>
-    <circle cx="490" cy="176" r="3.8"/>
+    <circle cx="600" cy="72" r="4.2"/>
+    <circle cx="600" cy="262" r="4.2"/>
   </g>
 
-  <text x="490" y="145" text-anchor="middle" font-family="'Times New Roman', serif" font-size="18" letter-spacing="3" fill="#5f584e">ATELIER DE PORTRAIT · SAINT-PÉTERSBOURG</text>
+  <text x="600" y="166" text-anchor="middle" font-family="Garamond, 'Times New Roman', serif" font-size="98" letter-spacing="12" fill="#1f1d1a">TESSART</text>
+  <text x="600" y="222" text-anchor="middle" font-family="'Times New Roman', serif" font-size="20" letter-spacing="3.2" fill="#5f584e">ATELIER DE PORTRAIT · SAINT-PÉTERSBOURG</text>
 </svg>
