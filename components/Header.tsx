@@ -13,11 +13,11 @@ export function Header() {
   return (
     <>
       <header className="sticky top-0 z-30 border-b border-transparent bg-[#faf7f0]/95 backdrop-blur">
-        <div className="mx-auto w-full max-w-6xl px-6 py-3 md:px-10 md:py-5">
-          <div className="border-line md:grid md:max-w-4xl md:grid-cols-[auto_1fr] md:items-center md:gap-6 md:border-y md:py-2">
+        <div className="mx-auto w-full max-w-6xl px-6 py-3 md:px-10 md:py-3">
+          <div className="border-line md:grid md:max-w-5xl md:grid-cols-[auto_1fr] md:items-center md:gap-6 md:border-y md:py-1">
             <div className="self-center md:self-auto">
               <Link href="/" className="inline-block no-underline">
-                <img src="/brand/tessart-wordmark.svg" alt={siteConfig.brand} className="h-20 w-auto md:h-[90px]" />
+                <img src="/brand/tessart-wordmark.svg" alt={siteConfig.brand} className="h-20 w-auto md:h-[78px]" />
               </Link>
             </div>
             <div className="flex w-full items-center justify-between gap-3 pt-1 md:justify-end md:gap-3 md:pt-0">
