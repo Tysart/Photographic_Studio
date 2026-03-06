@@ -3,16 +3,15 @@ export const siteConfig = {
   subtitle: "Portrait Atelier / Saint Petersburg",
   title: "TESSART — Портрет на плёнку в Санкт-Петербурге",
   description:
-    "Фотоателье TESSART: ч/б портрет 6x9 в исторических пространствах Санкт-Петербурга. Запись по Telegram, WhatsApp или звонку.",
+    "Фотоателье TESSART: ч/б портрет 6x9 в исторических пространствах Санкт-Петербурга. Запись по Telegram и WhatsApp.",
   heroTitle: "Портрет на чёрно-белую плёнку 6×9 в Петербурге.",
   heroLead: "Тихая прогулка и фотография, которую приятно держать в руках.",
   heroLeadEn: "A quiet 6×9 film portrait walk in Saint Petersburg.",
   mobileBookCta: "Записаться",
   priceRub: 10000,
   contacts: {
-    telegram: "https://t.me/tessart",
-    whatsapp: "https://wa.me/79990000000",
-    phone: "tel:+79990000000"
+    telegram: "https://t.me/tessartspb",
+    whatsapp: "https://wa.me/79612099502"
   },
   seoKeywords: "портрет на плёнку, ч/б фото, фотосессия Санкт-Петербург, medium format 6x9"
 } as const;
@@ -104,8 +103,8 @@ export const faqItems = [
   {
     qRu: "Как записаться?",
     qEn: "How to book?",
-    aRu: "Через Telegram, WhatsApp или звонок. Обычно отвечаю в течение дня.",
-    aEn: "Via Telegram, WhatsApp or a phone call. I usually reply within a day."
+    aRu: "Через Telegram или WhatsApp. Обычно отвечаю в течение дня.",
+    aEn: "Via Telegram or WhatsApp. I usually reply within a day."
   }
 ] as const;
 

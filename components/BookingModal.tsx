@@ -31,9 +31,6 @@ export function BookingModal({ open, onClose }: BookingModalProps) {
         >
           WhatsApp
         </a>
-        <a href={siteConfig.contacts.phone} className="block rounded-sm border border-line px-4 py-3 text-sm hover:border-accent">
-          {locale === "ru" ? "Позвонить" : "Call"}
-        </a>
       </div>
       <p className="mt-5 text-sm text-muted">
         {locale === "ru"
