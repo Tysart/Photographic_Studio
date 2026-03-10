@@ -19,23 +19,25 @@ export function Hero() {
           <img src="/brand/tessart-seal.svg" alt="" className="ml-1 h-6 w-6 opacity-55" aria-hidden="true" />
         </p>
         <h1 className="max-w-xl text-4xl leading-tight text-ink md:text-5xl">
-          {locale === "ru" ? siteConfig.heroTitle : "Black-and-white 6×9 film portrait in Saint Petersburg."}
+          {locale === "ru" ? siteConfig.heroTitle : "Atmospheric medium-format film photography in Saint Petersburg."}
         </h1>
         <p className="mt-4 max-w-xl text-lg leading-relaxed text-muted">
-          {locale === "ru" ? siteConfig.heroLead : "A quiet walk and a portrait you can truly hold."}
+          {locale === "ru" ? siteConfig.heroLead : "A slower, deliberate film session with selected final frames and physical results."}
         </p>
         <p className="mt-2 text-sm text-muted">
-          {locale === "ru" ? `(${siteConfig.heroLeadEn})` : "(Тихая прогулка и фотография, которую приятно держать в руках.)"}
+          {locale === "ru"
+            ? "Ниже я коротко показываю, чем такой портрет отличается от обычной пленочной фотосессии и что вы получите в итоге."
+            : "(If you have never done a film session before, the sections below explain the format.)"}
         </p>
 
         <div className="mt-7 flex flex-wrap gap-3">
           <Button onClick={() => setOpenBooking(true)}>{locale === "ru" ? "Записаться" : "Book a session"}</Button>
           <Button href="/gallery" variant="ghost">
-            {locale === "ru" ? "Смотреть портреты" : "View portraits"}
+            {locale === "ru" ? "Смотреть галерею" : "View gallery"}
           </Button>
         </div>
         <p className="mt-3 text-sm text-muted">
-          {locale === "ru" ? "Отвечаю в течение дня." : "I usually reply within the day."}
+          {locale === "ru" ? "По записи. Обычно отвечаю в течение дня." : "By appointment. I usually reply within the day."}
         </p>
       </div>
 
@@ -43,7 +45,7 @@ export function Hero() {
         <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-line bg-[#e7dfd0] shadow-card">
           <img
             src="/images/hero-placeholder.jpg"
-            alt="Портрет в историческом пространстве Санкт-Петербурга"
+            alt="Аналоговая фотосъёмка в Санкт-Петербурге"
             className="h-full w-full object-contain"
             loading="eager"
             fetchPriority="high"

@@ -19,8 +19,8 @@ export function LocationsSection() {
         </ul>
         <p className="mt-3 text-[15px] leading-relaxed text-muted">
           {locale === "ru"
-            ? "Локацию подбираем под погоду, свет и плотность людей."
-            : "We choose location based on light, weather and crowd level."}
+            ? "Подбираю место под свет, атмосферу и ритм съёмки. Если вам нужна конкретная студия или особая локация, это можно согласовать отдельно."
+            : "The location is chosen around light, atmosphere and the pace of the session. If you need a specific studio or venue, it can be arranged separately."}
         </p>
       </div>
     </section>

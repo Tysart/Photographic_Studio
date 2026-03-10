@@ -11,7 +11,7 @@ export function FAQAccordion() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 pb-10 md:px-10">
       <div className="thin-rule pt-8">
-        <h2 className="text-2xl text-ink">FAQ</h2>
+        <h2 className="text-2xl text-ink">{locale === "ru" ? "Частые вопросы" : "FAQ"}</h2>
         <div className="mt-4 space-y-2">
           {faqItems.map((item, index) => {
             const isOpen = openIndex === index;

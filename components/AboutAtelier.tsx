@@ -8,14 +8,14 @@ export function AboutAtelier() {
   return (
     <section className="mx-auto w-full max-w-6xl px-6 pb-16 md:px-10">
       <div className="thin-rule pt-8">
-        <h2 className="text-2xl text-ink">{locale === "ru" ? "Об ателье" : "About the atelier"}</h2>
+        <h2 className="text-2xl text-ink">{locale === "ru" ? "Кто стоит за TESSART" : "Who stands behind TESSART"}</h2>
         <p className="mt-3 max-w-3xl text-[15px] leading-relaxed text-muted">
           {locale === "ru"
-            ? "TESSART — тихое портретное ателье одного человека. Я снимаю на чёрно-белую плёнку 6×9 и люблю свет Петербурга: вокзалы, лестницы, улицы центра. Это не постановка с костюмами: современная одежда, классическая атмосфера и ритм прогулки."
-            : "TESSART is a quiet one-person portrait atelier. I work with black-and-white 6×9 film and love Saint Petersburg light: stations, staircases and central streets. No costumes, no staged glamour. Modern people, classic atmosphere."}
+            ? "TESSART — авторский фотографический проект в Петербурге. Я снимаю на среднеформатную плёнку, вручную проявляю материал и готовлю отпечатки так, чтобы у человека оставалась не только память о прогулке, но и красивая вещь, которую можно хранить."
+            : "TESSART is a one-person analog photography project. I work with medium-format film in Saint Petersburg, develop the material by hand and shape the result so it feels like an object, not just a file. The project currently works without its own studio and is moving toward a full atelier."}
         </p>
         <p className="mt-2 text-sm text-muted">
-          {locale === "ru" ? "Solo portrait atelier. Modern people, classic atmosphere." : "Тихое портретное ателье одного человека."}
+          {locale === "ru" ? "Петербургский портрет. Плёнка. Ручная проявка. Готовый отпечаток." : "Author analog photography. Saint Petersburg atmosphere. A physical result."}
         </p>
       </div>
     </section>
