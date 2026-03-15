@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: ReactNode 
     <html lang="ru">
       <body>
         <LocaleProvider>
-          <div className="site-shell">{children}</div>
+          <div className="app-root">{children}</div>
         </LocaleProvider>
       </body>
     </html>

@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "local:start": "./scripts/local-preview.sh start",
+    "local:stop": "./scripts/local-preview.sh stop",
+    "local:restart": "./scripts/local-preview.sh restart",
+    "local:status": "./scripts/local-preview.sh status"
   },
   "dependencies": {
     "next": "15.5.12",

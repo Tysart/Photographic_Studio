@@ -11,7 +11,7 @@ export function Hero() {
   const { locale } = useLocale();
 
   return (
-    <section className="mx-auto grid w-full max-w-6xl gap-8 px-6 pb-12 pt-8 md:grid-cols-[1.05fr_1fr] md:px-10 md:pt-12">
+    <section className="mx-auto grid w-full max-w-6xl gap-8 px-6 pb-12 pt-4 md:grid-cols-[1.05fr_1fr] md:px-10 md:pt-8">
       <div className="order-2 md:order-1">
         <p className="mb-4 flex items-center gap-3 text-xs uppercase tracking-[0.2em] text-muted">
           <span className="ornament" aria-hidden="true" />
@@ -42,14 +42,24 @@ export function Hero() {
       </div>
 
       <div className="order-1 md:order-2">
-        <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-line bg-[#e7dfd0] shadow-card">
-          <img
-            src="/images/hero-placeholder.jpg"
-            alt="Аналоговая фотосъёмка в Санкт-Петербурге"
-            className="h-full w-full object-contain"
-            loading="eager"
-            fetchPriority="high"
-          />
+        <div className="emerald-panel ornament-corners relative overflow-hidden rounded-sm p-6 shadow-card md:p-7">
+          <span className="ornament-corner tl" aria-hidden="true" />
+          <span className="ornament-corner tr" aria-hidden="true" />
+          <span className="ornament-corner bl" aria-hidden="true" />
+          <span className="ornament-corner br" aria-hidden="true" />
+          <div className="hero-seal-mark" aria-hidden="true" />
+          <div className="mb-5 text-center text-[11px] uppercase tracking-[0.28em] text-[#d8c7a2]">
+            {locale === "ru" ? "Portrait Atelier · Saint Petersburg" : "Portrait Atelier · Saint Petersburg"}
+          </div>
+          <div className="relative aspect-[4/5] overflow-hidden rounded-sm border border-[#ccb992]/30 bg-[#dfd3bc] shadow-[inset_0_0_0_1px_rgba(199,178,138,0.14)]">
+            <img
+              src="/images/hero-placeholder.jpg"
+              alt="Аналоговая фотосъёмка в Санкт-Петербурге"
+              className="h-full w-full object-contain"
+              loading="eager"
+              fetchPriority="high"
+            />
+          </div>
         </div>
       </div>
 

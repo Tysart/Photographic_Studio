@@ -12,16 +12,16 @@ export function Header() {
 
   return (
     <>
-      <header className="sticky top-0 z-30 border-b border-transparent bg-[#faf7f0]/95 backdrop-blur">
-        <div className="mx-auto w-full max-w-6xl px-6 py-3 md:px-10 md:py-3">
-          <div className="border-line md:mx-auto md:grid md:w-full md:max-w-5xl md:grid-cols-[auto_1fr] md:items-center md:gap-6 md:border-y md:py-1">
+      <header className="relative z-20">
+        <div className="mx-auto w-full max-w-6xl px-6 pb-1 pt-4 md:px-10 md:pt-6">
+          <div className="md:mx-auto md:grid md:w-full md:max-w-5xl md:grid-cols-[auto_1fr] md:items-center md:gap-6">
             <div className="self-center md:self-auto">
               <Link href="/" className="inline-block no-underline">
-                <img src="/brand/tessart-wordmark.svg" alt={siteConfig.brand} className="h-20 w-auto md:h-[78px]" />
+                <img src="/brand/tessart-wordmark.svg" alt={siteConfig.brand} className="h-14 w-auto opacity-90 md:h-[62px]" />
               </Link>
             </div>
-            <div className="flex w-full items-center justify-between gap-3 pt-1 md:justify-end md:gap-3 md:pt-0">
-              <div className="inline-flex overflow-hidden rounded-sm border border-line text-xs">
+            <div className="flex w-full items-center justify-between gap-3 pt-2 md:justify-end md:gap-4 md:pt-0">
+              <div className="inline-flex overflow-hidden rounded-sm border border-line/80 bg-[#faf6ee]/80 text-xs backdrop-blur-sm">
                 <button
                   type="button"
                   onClick={() => setLocale("ru")}

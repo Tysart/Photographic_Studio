@@ -15,7 +15,7 @@ const base =
 export function Button({ children, onClick, href, variant = "primary", className = "" }: ButtonProps) {
   const style =
     variant === "primary"
-      ? "border-ink bg-ink text-paper hover:bg-[#34312c]"
+      ? "border-[#173a34] bg-[#1f4a43] text-paper hover:bg-[#173a34]"
       : "border-line bg-transparent text-ink hover:border-accent hover:text-accent";
 
   if (href) {
