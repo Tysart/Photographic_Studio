@@ -31,48 +31,72 @@ export function AtelierHero() {
           <div className="paper-panel__content">
             <div className="paper-panel__text">
               <h1>
-                {locale === "ru"
-                  ? siteConfig.heroTitle
-                  : "A portrait in Saint Petersburg inspired by the culture of nineteenth-century photography."}
+                {locale === "ru" ? (
+                  <>
+                    <span className="paper-panel__title-line">Портрет в Петербурге,</span>
+                    <span className="paper-panel__title-line">вдохновленный</span>
+                    <span className="paper-panel__title-line">фотографической</span>
+                    <span className="paper-panel__title-line">культурой XIX века.</span>
+                  </>
+                ) : (
+                  "A portrait in Saint Petersburg inspired by the culture of nineteenth-century photography."
+                )}
               </h1>
-              <p>
-                {locale === "ru"
-                  ? "Я предлагаю ненадолго войти в ритм старой фотографии и получить портрет, который по ощущению и подаче стоит дальше от обычной пленочной съёмки нашего времени."
-                  : "A slower, deliberate portrait session with a physical result and a strong sense of atmosphere."}
-              </p>
-              <p>
-                {locale === "ru"
-                  ? "Это редкий портретный опыт: прогулка по Петербургу, точные кадры, ручной процесс и результат с другой плотностью, подачей и ощущением в руках."
-                  : "The session combines a walk through Saint Petersburg, careful compositions and a result that feels like an object rather than a stream of files."}
-              </p>
+              <div className="paper-panel__body">
+                <p>
+                  {locale === "ru"
+                    ? "Я предлагаю ненадолго войти в ритм старой фотографии и получить портрет, который по ощущению и подаче стоит дальше от обычной плёночной съёмки нашего времени."
+                    : "A slower, deliberate portrait session with a physical result and a strong sense of atmosphere."}
+                </p>
+                <p>
+                  {locale === "ru"
+                    ? "Это редкий портретный опыт: прогулка по Петербургу, точные кадры, ручной процесс и результат с другой плотностью, подачей и ощущением в руках."
+                    : "The session combines a walk through Saint Petersburg, careful compositions and a result that feels like an object rather than a stream of files."}
+                </p>
+              </div>
             </div>
 
             <figure className="portrait-card">
               <div className="portrait-card__image-frame">
                 <img src="/images/hero-placeholder.jpg" alt="Портрет TESSART Atelier" />
               </div>
-              <figcaption className="portrait-card__caption">
-                <img src="/images/new/logo%20small.svg" alt="" aria-hidden="true" />
-                <span>
-                  {locale === "ru"
-                    ? "пример скана негатива 6 на 9 сантиметров, локация: Витебский вокзал"
-                    : "sample 6x9 negative scan, location: Vitebsky Railway Station"}
-                </span>
-              </figcaption>
             </figure>
           </div>
 
-          <div className="paper-panel__actions">
-            <a href="/gallery" className="action-tag action-tag--primary">
-              {locale === "ru" ? "Галерея" : "Gallery"}
-            </a>
-            <a href="#pricing" className="action-tag action-tag--primary">
-              {locale === "ru" ? "Записаться" : "Book a portrait"}
-            </a>
+          <div className="paper-panel__footer">
+            <div className="paper-panel__actions">
+              <a href="/gallery" className="action-tag action-tag--primary">
+                {locale === "ru" ? "Галерея" : "Gallery"}
+              </a>
+              <a href="#pricing" className="action-tag action-tag--primary">
+                {locale === "ru" ? "Записаться" : "Book a portrait"}
+              </a>
+            </div>
+
+            <div className="portrait-card__caption">
+              <img src="/images/new/logo%20small.svg" alt="" aria-hidden="true" />
+              <p className="portrait-card__caption-copy">
+                {locale === "ru"
+                  ? (
+                      <>
+                        <span>пример скана негатива</span>
+                        <span>6 на 9 сантиметров,</span>
+                        <span>локация: Витебский вокзал</span>
+                      </>
+                    )
+                  : (
+                      <>
+                        <span>sample negative scan</span>
+                        <span>6 by 9 centimeters,</span>
+                        <span>location: Vitebsky Railway Station</span>
+                      </>
+                    )}
+              </p>
+            </div>
           </div>
         </div>
 
-        <img className="atelier-hero__divider atelier-hero__divider--bottom" src="/images/new/section-divider.svg" alt="" aria-hidden="true" />
+        <div className="atelier-hero__divider atelier-hero__divider--bottom" aria-hidden="true" />
       </div>
     </section>
   );
