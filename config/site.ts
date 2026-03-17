@@ -7,7 +7,7 @@ export const siteConfig = {
   heroTitle: "Портрет в Петербурге, вдохновленный фотографической культурой XIX века.",
   heroLead: "Это не просто съёмка на плёнку, а редкий портретный опыт: прогулка по Петербургу, точные кадры, ручной процесс и результат с другой плотностью, подачей и ощущением в руках.",
   heroLeadEn: "An atmospheric medium-format film session with final selected frames and physical prints.",
-  mobileBookCta: "Записаться",
+  mobileBookCta: "Записаться на съёмку",
   priceRub: 10000,
   contacts: {
     telegram: "https://t.me/tessartspb",
@@ -50,28 +50,121 @@ export const offerings = [
 
 export const processFrames = [
   {
-    titleRu: "1. Переписка и настрой",
-    titleEn: "1. Message and mood",
-    bodyRu: "Вы пишете мне, и мы выбираем подходящий формат, место в городе и тот ритм прогулки, который вам ближе.",
-    bodyEn: "You write to me, and we quickly decide which format suits you, where to shoot and what mood we want to build."
+    titleRu: "1. Согласование и место",
+    titleEn: "1. Planning and location",
+    bodyRu: "Сначала мы договариваемся о съёмке и выбираем место в городе. Я предлагаю проверенные локации, но можно выбрать и другие.",
+    bodyEn: "First we agree on the session and choose the location in the city. I suggest tested places, but other options are also possible."
   },
   {
     titleRu: "2. Съёмка в городе",
-    titleEn: "2. A calm session",
-    bodyRu: "Во время съёмки я веду вас по композициям, подсказываю по позе и слежу за светом, чтобы каждый кадр был на своём месте.",
-    bodyEn: "There is no stream of random duplicates. We work through chosen compositions, light, gesture and mood."
+    titleEn: "2. Session in the city",
+    bodyRu: "Во время съёмки я помогаю с позой, слежу за светом и направляю вас, чтобы кадр складывался точно. Если по ходу появляются более интересные точки или ракурсы, мы можем немного менять маршрут и двигаться дальше.",
+    bodyEn: "During the session I help with pose, watch the light and guide you so the frame comes together precisely. If stronger viewpoints appear on the way, we can slightly change the route."
   },
   {
-    titleRu: "3. Плёнка, проявка, отбор",
-    titleEn: "3. Film, development, selection",
-    bodyRu: "После встречи я вручную проявляю плёнку, подготавливаю сканы и печатаю те фотографии, которые войдут в ваш формат.",
-    bodyEn: "After the session I hand-develop the material, prepare the final scans and assemble the physical result."
+    titleRu: "3. Проявка и передача",
+    titleEn: "3. Development and delivery",
+    bodyRu: "После встречи я проявляю плёнку, подготавливаю сканы, печатаю фотографии и затем передаю готовый результат.",
+    bodyEn: "After the meeting I develop the film, prepare the scans, print the photographs and then hand over the finished result."
+  }
+] as const;
+
+export const processCards = [
+  {
+    titleRu: 'Камера "Москва-2"',
+    titleEn: 'Moskva-2 camera',
+    bodyRu: "Складная среднеформатная камера, на которую снимается серия. Позже сюда можно будет поставить реальный кадр самой камеры и деталей механики.",
+    bodyEn: "The folding medium-format camera used for the session. This can later be replaced with real close-ups of the camera and its mechanics.",
+    thumbnail: "/images/gallery/01.jpg",
+    gallery: [
+      { src: "/images/gallery/01.jpg", altRu: 'Камера "Москва-2"', altEn: "Moskva-2 camera" },
+      { src: "/images/gallery/02.jpg", altRu: 'Камера "Москва-2", деталь', altEn: "Moskva-2 camera detail" },
+      { src: "/images/gallery/03.jpg", altRu: 'Камера "Москва-2", общий вид', altEn: "Moskva-2 camera overview" }
+    ]
   },
   {
-    titleRu: "4. Вы получаете вещь",
-    titleEn: "4. You receive an object",
-    bodyRu: "В финале вы получаете готовую вещь: отпечатки, рамку, конверт или более собранную подачу в зависимости от выбранного формата.",
-    bodyEn: "The result is not just files, but prints, framing, an envelope or a presented object depending on the format."
+    titleRu: "Процесс съемки",
+    titleEn: "Shooting process",
+    bodyRu: "Здесь можно показать, как выглядит сама прогулка и работа с кадром: жест, пауза, композиция и положение камеры.",
+    bodyEn: "A look at the walk itself: gesture, pauses, composition and the way the camera is used on location.",
+    thumbnail: "/images/gallery/04.jpg",
+    gallery: [
+      { src: "/images/gallery/04.jpg", altRu: "Процесс съемки", altEn: "Shooting process" },
+      { src: "/images/gallery/05.jpg", altRu: "Процесс съемки, кадр со стороны", altEn: "Shooting process from the side" },
+      { src: "/images/gallery/06.jpg", altRu: "Процесс съемки, работа с позой", altEn: "Working on pose during the session" }
+    ]
+  },
+  {
+    titleRu: "Процесс проявки",
+    titleEn: "Development process",
+    bodyRu: "Этот блок хорошо подойдёт для будущих фотографий проявки, бачков, плёнки и ручного лабораторного этапа.",
+    bodyEn: "A place for future photos of development tanks, film strips and the manual lab stage.",
+    thumbnail: "/images/hero-placeholder.jpg",
+    gallery: [
+      { src: "/images/hero-placeholder.jpg", altRu: "Проявка плёнки", altEn: "Film development" },
+      { src: "/images/gallery/07.jpg", altRu: "Проявка плёнки, этап", altEn: "Development step" },
+      { src: "/images/gallery/08.jpg", altRu: "Проявка плёнки, лаборатория", altEn: "Film lab process" }
+    ]
+  },
+  {
+    titleRu: "Сканирование пленки",
+    titleEn: "Film scanning",
+    bodyRu: "Здесь удобно показать сканер, сам негатив и момент, когда кадр превращается в аккуратный цифровой файл.",
+    bodyEn: "A good place to show the scanner, the negative itself and the moment the frame becomes a clean digital file.",
+    thumbnail: "/images/gallery-placeholder.jpg",
+    gallery: [
+      { src: "/images/gallery-placeholder.jpg", altRu: "Сканирование пленки", altEn: "Film scanning" },
+      { src: "/images/gallery/09.jpg", altRu: "Сканирование, негатив", altEn: "Scanning the negative" },
+      { src: "/images/gallery/10.jpg", altRu: "Сканирование, результат", altEn: "Scanning result" }
+    ]
+  },
+  {
+    titleRu: "Печать фотографий",
+    titleEn: "Printing photographs",
+    bodyRu: "Отдельное окно для печати, бумаги, проб и того, как цифровой файл переходит в физический отпечаток.",
+    bodyEn: "A dedicated view for prints, paper, test sheets and how the file becomes a physical photograph.",
+    thumbnail: "/images/gallery/11.jpg",
+    gallery: [
+      { src: "/images/gallery/11.jpg", altRu: "Печать фотографий", altEn: "Printing photographs" },
+      { src: "/images/gallery/12.jpg", altRu: "Печать, бумага и отпечаток", altEn: "Printing, paper and print" },
+      { src: "/images/gallery/13.jpg", altRu: "Печать, готовый результат", altEn: "Finished print" }
+    ]
+  },
+  {
+    titleRu: "Упаковка",
+    titleEn: "Packaging",
+    bodyRu: "Здесь потом можно показать конверт, обёртку, оформление и весь финальный вид, в котором клиент получает работу.",
+    bodyEn: "Later this can show the envelope, wrapping, presentation and the way the final work is handed over.",
+    thumbnail: "/images/gallery/14.jpg",
+    gallery: [
+      { src: "/images/gallery/14.jpg", altRu: "Упаковка", altEn: "Packaging" },
+      { src: "/images/gallery/15.jpg", altRu: "Упаковка, оформление", altEn: "Packaging details" },
+      { src: "/images/gallery/16.jpg", altRu: "Упаковка, готовая выдача", altEn: "Final packaged handover" }
+    ]
+  },
+  {
+    titleRu: "Фотография",
+    titleEn: "Photograph front",
+    bodyRu: "Карточка для финального лицевого вида отпечатка: плотность бумаги, изображение и общий характер готовой вещи.",
+    bodyEn: "A card for the front side of the final print: paper density, image and the character of the finished object.",
+    thumbnail: "/images/gallery/17.jpg",
+    gallery: [
+      { src: "/images/gallery/17.jpg", altRu: "Готовая фотография", altEn: "Finished photograph" },
+      { src: "/images/gallery/18.jpg", altRu: "Фотография, лицевая сторона", altEn: "Front side of the photograph" },
+      { src: "/images/gallery/19.jpg", altRu: "Фотография, деталь", altEn: "Photograph detail" }
+    ]
+  },
+  {
+    titleRu: "Фотография с обратной стороны",
+    titleEn: "Photograph reverse side",
+    bodyRu: "Отдельный блок для задника, подписи, штампа и тех мелочей, которые делают работу завершённой и коллекционной.",
+    bodyEn: "A separate block for the reverse side, stamps, handwritten notes and the small details that complete the piece.",
+    thumbnail: "/images/gallery/20.jpg",
+    gallery: [
+      { src: "/images/gallery/20.jpg", altRu: "Фотография с обратной стороны", altEn: "Photograph reverse side" },
+      { src: "/images/gallery/21.jpg", altRu: "Обратная сторона, штамп", altEn: "Reverse side with stamp" },
+      { src: "/images/gallery/22.jpg", altRu: "Обратная сторона, подпись", altEn: "Reverse side with signature" }
+    ]
   }
 ] as const;
 
@@ -137,6 +230,25 @@ export const locations = [
   {
     ru: "Арендованная студия или выбранная вами локация",
     en: "A rented studio or a location chosen by you"
+  }
+] as const;
+
+export const formatGlossary = [
+  {
+    titleRu: 'Что такое "отпечатки"?',
+    titleEn: "What are prints?",
+    bodyRu:
+      "Отпечатки — это готовые фотографии на бумаге. Их можно держать в руках, положить в конверт, оформить в рамку и сохранить как итог съёмки в физическом виде.",
+    bodyEn:
+      "Prints are physical photographs on paper. They can be held, framed, kept in an envelope and experienced as objects, not only as files on a screen."
+  },
+  {
+    titleRu: 'Что такое "сканы"?',
+    titleEn: "What are scans?",
+    bodyRu:
+      "Сканы — это цифровые версии кадров, полученные после проявки плёнки. Их удобно хранить, отправлять близким и использовать онлайн, при этом сам негатив сохраняется.",
+    bodyEn:
+      "Scans are digital versions of the frames made after the film is developed. They are useful for sharing, publishing and storing online, while the original source still remains the film frame."
   }
 ] as const;
 

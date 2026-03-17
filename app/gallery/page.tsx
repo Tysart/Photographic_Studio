@@ -11,12 +11,26 @@ export const metadata: Metadata = {
 
 export default function GalleryPage() {
   return (
-    <>
-      <GalleryHeader />
-      <main>
-        <GalleryGrid />
-      </main>
-      <SeoFooter />
-    </>
+    <div className="site-shell site-shell--framed gallery-shell">
+      <div className="site-shell__frame" aria-hidden="true">
+        <div className="site-shell__line site-shell__line--top" />
+        <div className="site-shell__line site-shell__line--right" />
+        <div className="site-shell__line site-shell__line--bottom" />
+        <div className="site-shell__line site-shell__line--left" />
+
+        <div className="site-shell__corner site-shell__corner--tl" />
+        <div className="site-shell__corner site-shell__corner--tr" />
+        <div className="site-shell__corner site-shell__corner--br" />
+        <div className="site-shell__corner site-shell__corner--bl" />
+      </div>
+
+      <div className="site-shell__content gallery-shell__content">
+        <GalleryHeader />
+        <main>
+          <GalleryGrid />
+        </main>
+        <SeoFooter />
+      </div>
+    </div>
   );
 }

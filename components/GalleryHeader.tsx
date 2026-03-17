@@ -8,14 +8,23 @@ export function GalleryHeader() {
   const { locale } = useLocale();
 
   return (
-    <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6 md:px-10">
-      <div>
-        <p className="text-xs uppercase tracking-[0.16em] text-muted">{siteConfig.subtitle}</p>
-        <h1 className="mt-1 text-3xl text-ink">{locale === "ru" ? "Галерея портретов" : "Portrait gallery"}</h1>
+    <header className="gallery-header">
+      <div className="gallery-header__inner paper-section__inner paper-section__inner--narrow">
+        <div className="gallery-header__topline">
+          <p className="gallery-header__subtitle">{siteConfig.subtitle}</p>
+          <Link href="/" className="gallery-header__backlink">
+            {locale === "ru" ? "← На главную" : "← Back home"}
+          </Link>
+        </div>
+
+        <h1 className="gallery-header__title">{locale === "ru" ? "Галерея портретов" : "Portrait gallery"}</h1>
+        <p className="gallery-header__note">
+          {locale === "ru"
+            ? "Выборка портретов, отпечатков и кадров, которые задают общее ощущение работы."
+            : "A selection of portraits, prints and frames that convey the overall feel of the work."}
+        </p>
       </div>
-      <Link href="/" className="text-sm text-muted hover:text-ink">
-        {locale === "ru" ? "← На главную" : "← Back home"}
-      </Link>
+      <img className="hero-section-divider gallery-header__divider" src="/images/new/section-divider.svg" alt="" aria-hidden="true" />
     </header>
   );
 }

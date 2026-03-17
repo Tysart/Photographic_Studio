@@ -7,12 +7,13 @@ type ModalProps = {
   title: string;
   onClose: () => void;
   children: ReactNode;
+  panelClassName?: string;
 };
 
 const focusable =
   'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])';
 
-export function Modal({ open, title, onClose, children }: ModalProps) {
+export function Modal({ open, title, onClose, children, panelClassName }: ModalProps) {
   const panelRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -73,7 +74,10 @@ export function Modal({ open, title, onClose, children }: ModalProps) {
         }
       }}
     >
-      <div ref={panelRef} className="w-full max-w-xl rounded-md border border-line bg-[#fbf8f2] p-6 shadow-card">
+      <div
+        ref={panelRef}
+        className={`w-full max-w-xl rounded-md border border-line bg-[#fbf8f2] p-6 shadow-card ${panelClassName ?? ""}`}
+      >
         <div className="mb-4 flex items-start justify-between gap-4">
           <h2 className="text-2xl text-ink">{title}</h2>
           <button

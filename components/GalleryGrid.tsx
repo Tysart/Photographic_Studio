@@ -9,14 +9,14 @@ export function GalleryGrid() {
 
   return (
     <>
-      <section className="mx-auto w-full max-w-6xl px-6 pb-16 pt-4 md:px-10">
-        <div className="grid grid-cols-2 gap-3 md:grid-cols-3 lg:grid-cols-4">
+      <section className="gallery-grid-shell">
+        <div className="gallery-grid-shell__grid">
           {galleryItems.map((item, index) => (
             <button
               key={item.id}
               type="button"
               onClick={() => setOpenIndex(index)}
-              className="group relative aspect-[4/5] overflow-hidden rounded-sm border border-line bg-[#ece7db] text-left"
+              className="gallery-grid-shell__item group"
               aria-label={`Открыть портрет ${item.id}`}
             >
               <img
@@ -24,7 +24,7 @@ export function GalleryGrid() {
                 alt={item.alt}
                 loading="lazy"
                 decoding="async"
-                className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-[1.02]"
+                className="gallery-grid-shell__image"
               />
             </button>
           ))}

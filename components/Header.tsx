@@ -38,14 +38,14 @@ export function Header() {
                 </button>
               </div>
               <Link href="/gallery" className="text-sm text-muted transition-colors hover:text-ink">
-                {locale === "ru" ? "Галерея" : "Gallery"}
+                {locale === "ru" ? "Смотреть работы" : "View works"}
               </Link>
               <button
                 type="button"
                 onClick={() => setOpenBooking(true)}
                 className="rounded-sm border border-ink bg-ink px-3 py-2 text-xs uppercase tracking-[0.12em] text-paper md:hidden"
               >
-                {locale === "ru" ? siteConfig.mobileBookCta : "Book"}
+                {locale === "ru" ? siteConfig.mobileBookCta : "Book a session"}
               </button>
             </div>
           </div>

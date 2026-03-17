@@ -28,8 +28,7 @@ export function IntroCover({ dismissed, onEnter }: IntroCoverProps) {
 
           <div className="intro-cover__content">
             <button type="button" className="intro-cover__enter" onClick={onEnter}>
-              <span>Enter Atelier</span>
-              <span aria-hidden="true">↓</span>
+              <span>Войти</span>
             </button>
           </div>
         </div>
