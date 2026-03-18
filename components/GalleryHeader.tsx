@@ -9,7 +9,7 @@ export function GalleryHeader() {
 
   return (
     <header className="gallery-header">
-      <div className="gallery-header__inner paper-section__inner paper-section__inner--narrow">
+      <div className="gallery-header__inner">
         <div className="gallery-header__topline">
           <p className="gallery-header__subtitle">{siteConfig.subtitle}</p>
           <Link href="/" className="gallery-header__backlink">

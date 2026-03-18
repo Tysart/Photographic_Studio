@@ -7,6 +7,11 @@ import { LocaleProvider } from "@/components/LocaleProvider";
 export const metadata: Metadata = {
   title: siteConfig.title,
   description: siteConfig.description,
+  icons: {
+    icon: "/brand/tessart-monogram.svg",
+    shortcut: "/brand/tessart-monogram.svg",
+    apple: "/brand/tessart-monogram.svg"
+  },
   openGraph: {
     title: siteConfig.title,
     description: siteConfig.description,

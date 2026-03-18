@@ -71,25 +71,13 @@ export const processFrames = [
 
 export const processCards = [
   {
-    titleRu: 'Камера "Москва-2"',
-    titleEn: 'Moskva-2 camera',
-    bodyRu: "Складная среднеформатная камера, на которую снимается серия. Позже сюда можно будет поставить реальный кадр самой камеры и деталей механики.",
-    bodyEn: "The folding medium-format camera used for the session. This can later be replaced with real close-ups of the camera and its mechanics.",
-    thumbnail: "/images/gallery/01.jpg",
-    gallery: [
-      { src: "/images/gallery/01.jpg", altRu: 'Камера "Москва-2"', altEn: "Moskva-2 camera" },
-      { src: "/images/gallery/02.jpg", altRu: 'Камера "Москва-2", деталь', altEn: "Moskva-2 camera detail" },
-      { src: "/images/gallery/03.jpg", altRu: 'Камера "Москва-2", общий вид', altEn: "Moskva-2 camera overview" }
-    ]
-  },
-  {
     titleRu: "Процесс съемки",
     titleEn: "Shooting process",
     bodyRu: "Здесь можно показать, как выглядит сама прогулка и работа с кадром: жест, пауза, композиция и положение камеры.",
     bodyEn: "A look at the walk itself: gesture, pauses, composition and the way the camera is used on location.",
-    thumbnail: "/images/gallery/04.jpg",
+    thumbnail: "/images/process/process-shooting.svg",
     gallery: [
-      { src: "/images/gallery/04.jpg", altRu: "Процесс съемки", altEn: "Shooting process" },
+      { src: "/images/process/process-shooting.svg", altRu: "Процесс съемки", altEn: "Shooting process" },
       { src: "/images/gallery/05.jpg", altRu: "Процесс съемки, кадр со стороны", altEn: "Shooting process from the side" },
       { src: "/images/gallery/06.jpg", altRu: "Процесс съемки, работа с позой", altEn: "Working on pose during the session" }
     ]
@@ -99,9 +87,9 @@ export const processCards = [
     titleEn: "Development process",
     bodyRu: "Этот блок хорошо подойдёт для будущих фотографий проявки, бачков, плёнки и ручного лабораторного этапа.",
     bodyEn: "A place for future photos of development tanks, film strips and the manual lab stage.",
-    thumbnail: "/images/hero-placeholder.jpg",
+    thumbnail: "/images/process/process-development.svg",
     gallery: [
-      { src: "/images/hero-placeholder.jpg", altRu: "Проявка плёнки", altEn: "Film development" },
+      { src: "/images/process/process-development.svg", altRu: "Проявка плёнки", altEn: "Film development" },
       { src: "/images/gallery/07.jpg", altRu: "Проявка плёнки, этап", altEn: "Development step" },
       { src: "/images/gallery/08.jpg", altRu: "Проявка плёнки, лаборатория", altEn: "Film lab process" }
     ]
@@ -111,9 +99,9 @@ export const processCards = [
     titleEn: "Film scanning",
     bodyRu: "Здесь удобно показать сканер, сам негатив и момент, когда кадр превращается в аккуратный цифровой файл.",
     bodyEn: "A good place to show the scanner, the negative itself and the moment the frame becomes a clean digital file.",
-    thumbnail: "/images/gallery-placeholder.jpg",
+    thumbnail: "/images/process/process-scanning.svg",
     gallery: [
-      { src: "/images/gallery-placeholder.jpg", altRu: "Сканирование пленки", altEn: "Film scanning" },
+      { src: "/images/process/process-scanning.svg", altRu: "Сканирование пленки", altEn: "Film scanning" },
       { src: "/images/gallery/09.jpg", altRu: "Сканирование, негатив", altEn: "Scanning the negative" },
       { src: "/images/gallery/10.jpg", altRu: "Сканирование, результат", altEn: "Scanning result" }
     ]
@@ -123,47 +111,11 @@ export const processCards = [
     titleEn: "Printing photographs",
     bodyRu: "Отдельное окно для печати, бумаги, проб и того, как цифровой файл переходит в физический отпечаток.",
     bodyEn: "A dedicated view for prints, paper, test sheets and how the file becomes a physical photograph.",
-    thumbnail: "/images/gallery/11.jpg",
+    thumbnail: "/images/process/process-printing.svg",
     gallery: [
-      { src: "/images/gallery/11.jpg", altRu: "Печать фотографий", altEn: "Printing photographs" },
+      { src: "/images/process/process-printing.svg", altRu: "Печать фотографий", altEn: "Printing photographs" },
       { src: "/images/gallery/12.jpg", altRu: "Печать, бумага и отпечаток", altEn: "Printing, paper and print" },
       { src: "/images/gallery/13.jpg", altRu: "Печать, готовый результат", altEn: "Finished print" }
-    ]
-  },
-  {
-    titleRu: "Упаковка",
-    titleEn: "Packaging",
-    bodyRu: "Здесь потом можно показать конверт, обёртку, оформление и весь финальный вид, в котором клиент получает работу.",
-    bodyEn: "Later this can show the envelope, wrapping, presentation and the way the final work is handed over.",
-    thumbnail: "/images/gallery/14.jpg",
-    gallery: [
-      { src: "/images/gallery/14.jpg", altRu: "Упаковка", altEn: "Packaging" },
-      { src: "/images/gallery/15.jpg", altRu: "Упаковка, оформление", altEn: "Packaging details" },
-      { src: "/images/gallery/16.jpg", altRu: "Упаковка, готовая выдача", altEn: "Final packaged handover" }
-    ]
-  },
-  {
-    titleRu: "Фотография",
-    titleEn: "Photograph front",
-    bodyRu: "Карточка для финального лицевого вида отпечатка: плотность бумаги, изображение и общий характер готовой вещи.",
-    bodyEn: "A card for the front side of the final print: paper density, image and the character of the finished object.",
-    thumbnail: "/images/gallery/17.jpg",
-    gallery: [
-      { src: "/images/gallery/17.jpg", altRu: "Готовая фотография", altEn: "Finished photograph" },
-      { src: "/images/gallery/18.jpg", altRu: "Фотография, лицевая сторона", altEn: "Front side of the photograph" },
-      { src: "/images/gallery/19.jpg", altRu: "Фотография, деталь", altEn: "Photograph detail" }
-    ]
-  },
-  {
-    titleRu: "Фотография с обратной стороны",
-    titleEn: "Photograph reverse side",
-    bodyRu: "Отдельный блок для задника, подписи, штампа и тех мелочей, которые делают работу завершённой и коллекционной.",
-    bodyEn: "A separate block for the reverse side, stamps, handwritten notes and the small details that complete the piece.",
-    thumbnail: "/images/gallery/20.jpg",
-    gallery: [
-      { src: "/images/gallery/20.jpg", altRu: "Фотография с обратной стороны", altEn: "Photograph reverse side" },
-      { src: "/images/gallery/21.jpg", altRu: "Обратная сторона, штамп", altEn: "Reverse side with stamp" },
-      { src: "/images/gallery/22.jpg", altRu: "Обратная сторона, подпись", altEn: "Reverse side with signature" }
     ]
   }
 ] as const;

@@ -765,6 +765,10 @@ a {
   box-shadow: none;
 }
 
+.gallery-header__inner::before {
+  content: none;
+}
+
 .gallery-header__topline {
   display: flex;
   align-items: flex-start;
@@ -977,9 +981,10 @@ a {
 
 .paper-panel__footer {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(220px, 0.72fr);
-  gap: clamp(18px, 2.2vw, 30px);
-  align-items: end;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 16px;
+  align-items: center;
+  width: 100%;
   padding: 12px clamp(20px, 2.2vw, 30px) clamp(18px, 2vw, 24px);
 }
 
@@ -988,7 +993,10 @@ a {
   grid-template-columns: repeat(2, minmax(170px, 220px));
   gap: 16px;
   align-items: center;
-  justify-content: flex-start;
+  grid-column: 1;
+  grid-row: 1;
+  align-self: start;
+  justify-content: start;
   width: fit-content;
 }
 
@@ -997,6 +1005,10 @@ a {
   grid-template-columns: auto 1fr;
   gap: 8px;
   align-items: center;
+  grid-column: 2;
+  grid-row: 1;
+  align-self: start;
+  justify-self: end;
   width: 100%;
   margin: 0;
   color: #31271f;
@@ -1399,22 +1411,17 @@ a {
 }
 
 .process-grid__frame::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: url("/images/new/process-frame.svg") center/100% 100% no-repeat;
-  pointer-events: none;
-  z-index: 3;
+  content: none;
 }
 
 .process-grid__image {
   position: absolute;
-  inset: 11.5% 10.5%;
+  inset: 0;
   display: block;
-  width: 79%;
-  height: 79%;
-  object-fit: cover;
-  filter: sepia(0.1) contrast(1.03);
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: none;
   z-index: 1;
   box-shadow:
     0 12px 22px rgba(32, 25, 18, 0.22),
@@ -1670,6 +1677,34 @@ a {
   margin-top: 8px;
 }
 
+.pricing-note__list {
+  margin: 10px 0 0;
+  padding-left: 1.1em;
+  color: #2b241c;
+  font-family: "Cormorant Garamond", "EB Garamond", serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.28;
+}
+
+.pricing-note__list li + li {
+  margin-top: 4px;
+}
+
+.pricing-note__section {
+  margin-top: 16px;
+}
+
+.pricing-note__section-title,
+.pricing-note__price-line {
+  color: #7b5c22;
+}
+
+.pricing-note__section-title {
+  margin-bottom: 6px !important;
+  font-weight: 600;
+}
+
 .paper-section--about {
   padding-bottom: 18px;
 }
@@ -1788,13 +1823,18 @@ a {
 
   .paper-panel__footer {
     grid-template-columns: minmax(0, 1fr) 378px;
-    gap: 26px;
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+    align-items: center;
     padding: 12px 30px 26px;
   }
 
   .portrait-card__caption {
     grid-template-columns: 64px 1fr;
     gap: 14px;
+    width: 378px;
+    max-width: 378px;
     font-size: clamp(15px, 1.05vw, 19px);
     line-height: 1.08;
     align-items: center;
@@ -1815,6 +1855,12 @@ a {
   .paper-panel__actions {
     grid-template-columns: repeat(2, max-content);
     gap: 28px;
+    justify-content: start;
+    align-self: center;
+  }
+
+  .paper-panel__actions .action-tag--hero-graphic img {
+    transform: none;
   }
 
   .action-tag--primary {
@@ -1895,6 +1941,22 @@ a {
     grid-template-columns: 1fr;
     gap: 14px;
     padding: 12px 18px 18px;
+  }
+
+  .paper-panel__actions,
+  .portrait-card__caption {
+    grid-column: auto;
+    grid-row: auto;
+    align-self: auto;
+    justify-self: auto;
+  }
+
+  .paper-panel__actions {
+    margin-top: 0;
+  }
+
+  .paper-panel__actions .action-tag--hero-graphic img {
+    transform: none;
   }
 
   .portrait-card__caption {
