@@ -73,8 +73,8 @@ export const processCards = [
   {
     titleRu: "Процесс съемки",
     titleEn: "Shooting process",
-    bodyRu: "Здесь можно показать, как выглядит сама прогулка и работа с кадром: жест, пауза, композиция и положение камеры.",
-    bodyEn: "A look at the walk itself: gesture, pauses, composition and the way the camera is used on location.",
+    bodyRu: "Здесь скоро будут настоящие фотографии того, как проходит съёмка: работа с кадром, светом и самой композицией.",
+    bodyEn: "Real photographs of the session will appear here soon: the work with the frame, the light and the composition itself.",
     thumbnail: "/images/process/process-shooting.svg",
     gallery: [
       { src: "/images/process/process-shooting.svg", altRu: "Процесс съемки", altEn: "Shooting process" },
@@ -85,8 +85,8 @@ export const processCards = [
   {
     titleRu: "Процесс проявки",
     titleEn: "Development process",
-    bodyRu: "Этот блок хорошо подойдёт для будущих фотографий проявки, бачков, плёнки и ручного лабораторного этапа.",
-    bodyEn: "A place for future photos of development tanks, film strips and the manual lab stage.",
+    bodyRu: "Здесь скоро будут настоящие фотографии проявки: плёнка, бачки и сам ручной лабораторный этап.",
+    bodyEn: "Real photographs of the development process will appear here soon: the film, the tanks and the manual laboratory stage.",
     thumbnail: "/images/process/process-development.svg",
     gallery: [
       { src: "/images/process/process-development.svg", altRu: "Проявка плёнки", altEn: "Film development" },
@@ -97,8 +97,8 @@ export const processCards = [
   {
     titleRu: "Сканирование пленки",
     titleEn: "Film scanning",
-    bodyRu: "Здесь удобно показать сканер, сам негатив и момент, когда кадр превращается в аккуратный цифровой файл.",
-    bodyEn: "A good place to show the scanner, the negative itself and the moment the frame becomes a clean digital file.",
+    bodyRu: "Здесь скоро будут настоящие фотографии сканирования: негатив, сканер и момент, когда кадр переходит в цифровой вид.",
+    bodyEn: "Real photographs of the scanning process will appear here soon: the negative, the scanner and the moment the frame becomes digital.",
     thumbnail: "/images/process/process-scanning.svg",
     gallery: [
       { src: "/images/process/process-scanning.svg", altRu: "Сканирование пленки", altEn: "Film scanning" },
@@ -109,8 +109,8 @@ export const processCards = [
   {
     titleRu: "Печать фотографий",
     titleEn: "Printing photographs",
-    bodyRu: "Отдельное окно для печати, бумаги, проб и того, как цифровой файл переходит в физический отпечаток.",
-    bodyEn: "A dedicated view for prints, paper, test sheets and how the file becomes a physical photograph.",
+    bodyRu: "Здесь скоро будут настоящие фотографии печати: бумага, пробы и готовые отпечатки.",
+    bodyEn: "Real photographs of the printing process will appear here soon: paper, test sheets and finished prints.",
     thumbnail: "/images/process/process-printing.svg",
     gallery: [
       { src: "/images/process/process-printing.svg", altRu: "Печать фотографий", altEn: "Printing photographs" },
@@ -243,14 +243,25 @@ export const faqItems = [
   }
 ] as const;
 
-export const galleryItems = Array.from({ length: 22 }, (_, i) => {
-  const id = 22 - i;
+const nonPortraitFiles = new Set(["01", "02", "04", "06", "07", "08", "09", "10", "11"]);
+
+const allGalleryItems = Array.from({ length: 25 }, (_, i) => {
+  const id = 25 - i;
   const file = String(id).padStart(2, "0");
+  const category = nonPortraitFiles.has(file) ? "other" : "portraits";
 
   return {
     id,
+    file,
+    category,
     src: `/images/gallery/${file}.jpg?v=2`,
-    alt: `Портрет на плёнку 6×9, кадр ${id}`,
-    caption: "6×9 film portrait"
+    alt:
+      category === "portraits"
+        ? `Портрет на плёнку 6×9, кадр ${id}`
+        : `Фотография на плёнку 6×9, кадр ${id}`,
+    caption: category === "portraits" ? "6×9 film portrait" : "6×9 film photograph"
   };
 });
+
+export const portraitGalleryItems = allGalleryItems.filter((item) => item.category === "portraits");
+export const otherGalleryItems = allGalleryItems.filter((item) => item.category === "other");

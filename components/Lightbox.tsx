@@ -1,17 +1,24 @@
 "use client";
 
 import { useEffect } from "react";
-import { galleryItems } from "@/config/site";
 import { Modal } from "@/components/Modal";
 import { useLocale } from "@/components/LocaleProvider";
 
+type GalleryItem = {
+  id: number;
+  src: string;
+  alt: string;
+  caption: string;
+};
+
 type LightboxProps = {
+  items: GalleryItem[];
   openIndex: number | null;
   onClose: () => void;
   onMove: (nextIndex: number) => void;
 };
 
-export function Lightbox({ openIndex, onClose, onMove }: LightboxProps) {
+export function Lightbox({ items, openIndex, onClose, onMove }: LightboxProps) {
   const isOpen = openIndex !== null;
   const { locale } = useLocale();
 
@@ -20,20 +27,20 @@ export function Lightbox({ openIndex, onClose, onMove }: LightboxProps) {
 
     const onKey = (event: KeyboardEvent) => {
       if (event.key === "ArrowRight") {
-        onMove((openIndex + 1) % galleryItems.length);
+        onMove((openIndex + 1) % items.length);
       }
       if (event.key === "ArrowLeft") {
-        onMove((openIndex - 1 + galleryItems.length) % galleryItems.length);
+        onMove((openIndex - 1 + items.length) % items.length);
       }
     };
 
     document.addEventListener("keydown", onKey);
     return () => document.removeEventListener("keydown", onKey);
-  }, [isOpen, onMove, openIndex]);
+  }, [isOpen, items.length, onMove, openIndex]);
 
   if (openIndex === null) return null;
 
-  const item = galleryItems[openIndex];
+  const item = items[openIndex];
 
   return (
     <Modal open={isOpen} onClose={onClose} title={item.caption}>
@@ -44,17 +51,17 @@ export function Lightbox({ openIndex, onClose, onMove }: LightboxProps) {
         <div className="flex items-center justify-between gap-3">
           <button
             type="button"
-            onClick={() => onMove((openIndex - 1 + galleryItems.length) % galleryItems.length)}
+            onClick={() => onMove((openIndex - 1 + items.length) % items.length)}
             className="rounded-sm border border-line px-3 py-2 text-sm text-muted hover:text-ink"
           >
             {locale === "ru" ? "← Назад" : "← Prev"}
           </button>
           <p className="text-xs uppercase tracking-[0.14em] text-muted">
-            {openIndex + 1} / {galleryItems.length}
+            {openIndex + 1} / {items.length}
           </p>
           <button
             type="button"
-            onClick={() => onMove((openIndex + 1) % galleryItems.length)}
+            onClick={() => onMove((openIndex + 1) % items.length)}
             className="rounded-sm border border-line px-3 py-2 text-sm text-muted hover:text-ink"
           >
             {locale === "ru" ? "Далее →" : "Next →"}

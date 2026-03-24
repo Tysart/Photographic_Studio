@@ -18,11 +18,6 @@ export function GalleryHeader() {
         </div>
 
         <h1 className="gallery-header__title">{locale === "ru" ? "Галерея портретов" : "Portrait gallery"}</h1>
-        <p className="gallery-header__note">
-          {locale === "ru"
-            ? "Выборка портретов, отпечатков и кадров, которые задают общее ощущение работы."
-            : "A selection of portraits, prints and frames that convey the overall feel of the work."}
-        </p>
       </div>
       <img className="hero-section-divider gallery-header__divider" src="/images/new/section-divider.svg" alt="" aria-hidden="true" />
     </header>
